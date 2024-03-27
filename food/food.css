@@ -127,11 +127,40 @@ nav ul li a:hover {
     right: 0;
 }
 
+.elip3 {
+
+
+    position: absolute;
+    top: 700px;
+    right: 0;
+}
+
+.rect5 {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+}
+
+.elip4 {
+
+
+    position: absolute;
+    top: 2500px;
+    right: 0;
+}
+
+.rect6 {
+    position: absolute;
+    top: 3000px;
+    left: 0;
+}
+
 .tm1 {
     position: absolute;
     bottom: 422px;
     left: 430px;
 }
+
 
 .tm2 {
     position: absolute;
@@ -157,6 +186,17 @@ nav ul li a:hover {
     left: 380px;
 }
 
+.tm6 {
+    position: absolute;
+    top: 2070px;
+    left: 380px;
+}
+
+.tm7 {
+    position: absolute;
+    top: 3370px;
+    left: 880px;
+}
 
 .chill {
     position: absolute;
@@ -174,6 +214,22 @@ nav ul li a:hover {
     position: absolute;
     top: 1200px;
     right: 0px;
+
+
+}
+
+.tomato3 {
+    position: absolute;
+    top: 2850px;
+    left: 300px;
+
+
+}
+
+.tomato4 {
+    position: absolute;
+    top: 3400px;
+    left: 00px;
 
 
 }
@@ -207,6 +263,18 @@ nav ul li a:hover {
     position: absolute;
     top: 750px;
     left: 0px;
+}
+
+.lm3 {
+    position: absolute;
+    top: 1530px;
+    left: 1020px;
+}
+
+.lm4 {
+    position: absolute;
+    top: 2760px;
+    left: 770px;
 }
 
 /*  */
@@ -300,6 +368,7 @@ nav ul li a:hover {
     color: #fff;
     border-radius: 30px;
     padding: 0 !important;
+
 }
 
 .third h3 {
@@ -404,8 +473,92 @@ nav ul li a:hover {
 
 }
 
-.ccard {
-    width: 500px !important;
+.fifth .cards .card {
+    background-color: #CCC1AA !important;
+    color: #000 !important;
+    margin-left: 60px !important;
+    margin-top: 10px !important;
+    padding-bottom: 10px !important;
 
 
+
+
+}
+
+.b1-text {
+    margin-top: 10px;
+}
+
+.b-text {
+    font-size: 15px;
+    color: #666;
+    margin-top: 50px;
+    border-top: #666 solid;
+
+}
+
+.cheers {
+    margin: 150px 0px 30px 0px !important;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cheersFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.cheersFlex h3,
+.cheersFlex a {
+    font-size: 45px;
+
+}
+
+.cheersFlex a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.buttonAndArr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    border-bottom: #666 solid;
+
+}
+
+.book {
+    margin-right: 110px;
+}
+
+/*  */
+.footer {
+    margin-top: 80px !important;
+
+}
+
+footer {
+
+    background-color: #CCC1AA;
+
+}
+
+.🧓 {
+    padding: 20px 0px 0px 0px;
+    margin: 0;
+}
+
+.👵 {
+
+    margin-left: 114px;
+}
+
+.👩‍🦰 {
+    font-weight: bold;
 }
