@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:wght@100;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ABeeZee", sans-serif;
+}
+
+.navbar .navbar-brand {
+    margin-top: 30px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+nav ul {
+    margin-left: 200px;
+}
+
+nav ul li {
+    margin-right: 12px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+nav ul li a {
+    color: #000 !important;
+}
+
+nav {
+    height: 50px;
+}
+
+nav ul li a:hover {
+    color: #666 !important;
+}
+
+/* for the line in the bottom of the link */
+.navbar {
+    position: relative;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #D21200;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link:active::after {
+    width: 100%;
+    visibility: visible;
+}
+
+/*  */
+
+/*  */
+.parent {
+    background-color: #EAE5D9;
+    margin: 30px 0px;
+    padding: 50px 0px;
+}
+
+.first {
+    margin-bottom: 0px;
+}
+
+.first h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+
+}
+
+.first p {
+    color: #666;
+    margin-bottom: 30px;
+
+}
+
+.first button {
+    background-color: #D21200;
+    color: #fff;
+    font-size: large;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.first button:hover {
+    background-color: #cb463a;
+}
+
+.md {
+    z-index: 4;
+}
+
+
+.tb {
+    position: absolute;
+    bottom: 70px;
+    right: 395px;
+}
+
+.elip7 {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+.rect9 {
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+}
+
+.tm1 {
+    position: absolute;
+    bottom: 422px;
+    left: 430px;
+}
+
+.tm2 {
+    position: absolute;
+    bottom: 240px;
+    right: 115px;
+}
+
+.tm3 {
+    position: absolute;
+    bottom: 60px;
+    left: 300px;
+}
+
+.tm4 {
+    position: absolute;
+    top: 780px;
+    right: 270px;
+}
+
+.tm5 {
+    position: absolute;
+    top: 1100px;
+    left: 380px;
+}
+
+
+.chill {
+    position: absolute;
+    bottom: 220px;
+    left: 110px;
+}
+
+.tomato1 {
+    position: absolute;
+    bottom: 410px;
+    left: 0px;
+}
+
+.tomato2 {
+    position: absolute;
+    top: 1200px;
+    right: 0px;
+
+
+}
+
+.ff1 {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+}
+
+.ff2 {
+    position: absolute;
+    top: 1300px;
+    left: 0px;
+}
+
+
+.ff3 {
+    position: absolute;
+    top: 900px;
+    right: 0px;
+}
+
+.lm1 {
+    position: absolute;
+    bottom: 140px;
+    right: 0px;
+}
+
+.lm2 {
+    position: absolute;
+    top: 750px;
+    left: 0px;
+}
+
+/*  */
+
+
+/* second */
+.second h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.second {
+    margin-bottom: 40px;
+}
+
+/*  */
+
+
+/* cards */
+.card {
+    background-color: #392E2D !important;
+    color: #fff !important;
+    padding: 10px !important;
+
+    margin-top: 20px !important;
+    margin-left: 60px;
+}
+
+.card-bottom {
+    margin-top: 80px !important;
+}
+
+.card-price {
+    margin-left: 180px;
+    padding-bottom: 70px;
+}
+
+.for-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Burger {
+    position: absolute;
+    top: 870px;
+    left: 45px;
+
+}
+
+.salad {
+    position: absolute;
+    top: 860px;
+    left: 450px;
+}
+
+.Chiken {
+    position: absolute;
+    top: 869px;
+    left: 780px;
+
+}
+
+.Vegan {
+    position: absolute;
+
+    top: 1175px;
+    left: 240px;
+
+
+}
+
+.pizza {
+    position: absolute;
+
+    top: 1175px;
+    left: 600px;
+}
+
+/*  */
+
+/* third */
+
+.third {
+    margin: 150px 150px 100px 150px !important;
+    padding: 30px;
+    background-color: #392E2D;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0 !important;
+}
+
+.third h3 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+
+
+}
+
+.🤯3 {
+
+    margin: 40px 30px 30px 40px !important;
+
+}
+
+.🤯3 img {
+    margin: 40px;
+}
+
+.img-floating {
+    position: absolute;
+    top: 1790px;
+    right: 370px;
+
+}
+
+.hidden-img {
+    margin-top: 40px;
+
+}
+
+
+.buttonReadMore {
+    font-size: 14px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 130px;
+    margin-left: 0px;
+}
+
+/*  */
+
+
+
+#About {
+    color: #D21200 !important;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.fourth h3 {
+    font-size: 30px;
+    font-style: 300;
+
+}
+
+.fourth .btn-danger {
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #D21200 !important;
+}
+
+.fourth {
+    margin: 100px !important;
+}
+
+.fourthImg3 {
+    position: absolute;
+    top: 2400px;
+}
+
+.fourthImg1 {
+    margin: 5px 50px;
+}
+
+.fourthImg2 {
+    margin: 5px 10px 5px 60px;
+}
+
+/*  */
+.fifth h5,
+.fifth h3 {
+    text-align: center;
+
+}
+
+.fifth h5 {
+    color: #D21200;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.fifth h3 {
+    font-size: 30px;
+    font-style: 300;
+
+}
+
+.ccard {
+    width: 500px !important;
+
+
+}
