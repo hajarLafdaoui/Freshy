@@ -9,59 +9,66 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg  ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="images/Freshy.png" width="100px" alt=""> </a>
+            <a class="navbar-brand" href="#"> <img src="images/Freshy.png" width="100px" alt=""> </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <div class="collapse navbar-collapse"  id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-disabled="true">Healthy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-disabled="true">Contact</a>
-              </li>
-            </ul>
-       
+            <div class="collapse navbar-collapse"  id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#Home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#About_Us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+                </ul>
             </div>
-          </div>
+
+            <a href="#Log_in" class="Btn">Log in</a>
+
         </div>
-      </nav>
-      <!--  -->
+    </nav>
 
       <!--  -->
       <div class="container-fluid parent ">
+
         <div class="row">
+
+            <!-- first -->
             <div class="first text-center">
-                <h1>Finally, the dish you have been <br> waiting for on your table</h1>
+                <h1  id="Home">Finally, the dish you have been <br> waiting for on your table</h1>
                 <p>In publishing and graphic design, Lorem ipsum is a placeholder text <br> commonly used to demonstrate the visual form of a document </p>
-                <button>Order Now</button>
+                <button class="cta">
+                    <span><a href="book.html">Book a table</a></span>
+                    <svg width="15px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
             </div>
             <div class="images d-flex justify-content-center align-items-center ">
                 <img src="images/photo-1546069901-ba9599a7e63c-removebg-preview 1.png" alt="" width="320px" height="350px">
                 <img src="images/healthy-vegetable-salad-fish-top-view-white-background-flat-lay-143617738-removebg-preview 1.png" alt="" width="470px" height="400px" class="md">
                 <img src="images/images-removebg-preview (3) 1.png" alt="" width="300px" height="360px">
             </div>
-
+        </div>
+            <!-- second -->
             <div class="second text-center">
                 <h3>Top List is Back</h3>
                 <p>All our best meals in one delicious snap</p>
             </div>
 
+            <!-- cards -->
             <div class=" row cards d-flex d-flex justify-content-center">
                 <div class="card  col-md-3 col-sm-6">
                     <div class="card-price">$ 10.99</div>
@@ -124,173 +131,240 @@
                 </div>
 
             </div>
-<div class="container">
-    <div class="row third">
-        <h3 class="col-12" >For super nutrition, the chic and <br> health conscious flock to Freshy.</h3>
-        <div class="col-md-6 col-sm-12 🤯3" >
-            <img src="images/150+.png" width="
-            300px" alt="">
-            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.</p>
-        </div>
-        <div class="col-md-3 🍚4">
-            <img src="images/image 22.png" width="160px" alt="" class="hidden-img">
-            <img src="images/image 25.png" width="200px" alt="" class="img-floating" >
-        </div>
-        <div class="col-md-2 ">
-            <button class="buttonReadMore ">Read More</button>
-        </div>
 
+            <!-- third -->
+            <!-- <div class="row third">
+                <h3 class="col-12" >For super nutrition, the chic and <br> health conscious flock to Freshy.</h3>
+                <div class="col-md-6 col-sm-12 🤯3" >
+                    <img src="images/150+.png" width="
+                    300px" alt="">
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.</p>
+                </div>
+                <div class="col-md-3 🍚4">
+                    <img src="images/image 22.png" width="160px" alt="" class="hidden-img">
+                    <img src="images/image 25.png" width="200px" alt="" class="img-floating" >
+                </div>
+                <div class="col-md-2 ">
+                    <button class="buttonReadMore ">Read More</button>
+                </div>
+            </div> -->
 
-    </div>
-
-</div>
-
-<div class="container">
-    <div class="row fourth ">
-        <div class="col-md-5 col-sm-12 ">
-            <p id="About">About</p>
-            <h3>Why Freshy?</h3> <br><br>
-            <h5>Chef-Crafted For Pure Joy</h5> 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
-            <h5>Ingredient You Can Trust</h5> 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
-            <h5>Special Dishes As You Like</h5> 
-            <p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
-            <button class="btn btn-danger">Learn More</button>
-        </div>
-        <div class="col-md-5 col-sm-12">
-            <img src="images/Rectangle 21.png" alt="" width="210px" height="240px" class="fourthImg1">
-            <img src="images/Rectangle 22.png" alt="" width="210px" height="250px" class="fourthImg2">
-            <img src="images/Rectangle 23.png" alt="" width="210px" height="250px" class="fourthImg3">
-        </div>
-        
-    </div>
-</div>
-
-<div class="container">
-    <div class="row fifth ">
-
-        <div class="headers">
-            <h5>Testimoni</h5>
-            <h3>Real Client Review</h3>
-        </div>
-        <div class="container">
-            <div class="cards justify-content-center row">
-
-                <div class="card  col-md-3" style="max-width: 540px;">
-                    <div class="row align-items-center g-0">
-                      <div class="col-md-4">
-                        <img src="images/6.png" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <p class="card-text b1-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <p class="card-text b-text"><small >Steve Smith, Director Of Venus</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    
-        
-                  <div class="card  col-md-3" style="max-width: 540px;">
-                    <div class="row align-items-center g-0">
-                      <div class="col-md-4">
-                        <img src="images/40.png" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <p class="card-text b1-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <p class="card-text b-text"><small >Steve Smith, Director Of Venus</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="card  col-md-3" style="max-width: 540px;">
-                    <div class="row align-items-center g-0">
-                      <div class="col-md-4">
-                        <img src="images/45.png" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <p class="card-text   b1-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                          <p class="card-text b-text"><small >Steve Smith, Director Of Venus</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    
-
-
-    </div>
-</div>
-
-      <div class="container">
-        <div class="row cheers  ">
+          <!-- cheers -->
+          <div class="row cheers  ">
             <div class="col-md-4">
                 <img src="images/cheers.png" alt="" width="480px" height="300px">
             </div>
             <div class="col-md-4 cheersFlex">
                 <h3>Reserve Your Seat</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                <div class="buttonAndArr">
-                    <a href="#" class="book">Book Now</a>
-                    <img src="images/ArrCheers.png" alt="" width="50px">
-                </div>
-               
-
-
+                <button class="cta">
+                    <span><a href="book.html">Book a table</a></span>
+                    <svg width="15px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
             </div>
         </div>
-      </div>
-<footer>
-    
-    <div class="row 🧓 ">
-        <div class="col-md-3 col-sm-6">
-            <p class=" 👵 👩‍🦰">Contact</p>
+        
+        <!-- log in -->
+        <div class="row">
+         
         </div>
-        <div class="col-md-3 col-sm-6">
-            <p class=" 👵 👩‍🦰">Drop By</p>
+        <div class="row sign justify-content-center align-items-center">
+            <p class="col-12 text-center" id="Log_in">Log in</p>
+            <div class="col-md-3">
+                <img src="images/ALOT.png" alt="" width="200px">
+            </div>
+            <div class="col-md-6">
+                <p>To book a table, guests must first complete our sign-up process.</p>
+                <div class="form-floating mb-3">
+                    <div class="inputbox">
+                        <input required="required" type="text">
+                        <span>Username</span>
+                        <i></i>
+                    </div>
+                  </div>
+                  <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                  <div >
+                <input type="submit" name="submit" value="login now" class="form-btn Btn mb-4">
+                 
+                </div>
+                  <p>don't have an account? <a href="register.html">register now</a></p>
+            </div> 
+            <div class="col-md-3">
+                <img src="images/Photo.png" alt="" width="200px">
+            </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-            <p class=" 👵 👩‍🦰">Follow US</p>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <p class=" 👵 👩‍🦰">Legal</p>
-        </div>
-    </div> 
+
+            <!-- fourth -->
+            <div  id="About_Us" class="row fourth " >
+                <div class="col-md-5 col-sm-12 ">
+                    <p id="About">About</p>
+                    <h3 >Why Freshy?</h3> <br><br>
+                    <h5>Chef-Crafted For Pure Joy</h5> 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
+                    <h5>Ingredient You Can Trust</h5> 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
+                    <h5>Special Dishes As You Like</h5> 
+                    <p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
+                    <a href="learn_more.html" class="leranb"><span>Learn More</span> </a>
+                    
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="images/Rectangle 21.png" alt="" width="210px" height="240px" class="fourthImg1">
+                    <img src="images/Rectangle 22.png" alt="" width="210px" height="250px" class="fourthImg2">
+                    <img src="images/Rectangle 23.png" alt="" width="210px" height="250px" class="fourthImg3">
+                </div>
+            </div>
+
+            
+            <!-- fifth -->
+            <div class="row fifth ">
+                <div class="headers">
+                    <h5>FeedBack</h5>
+                    <h3>Real Client Review</h3>
+                </div>
+                <div class="cards justify-content-center row">
+
+                        <div class="card  col-md-3" style="max-width: 540px;">
+                            <div class="row align-items-center g-0">
+                                <div class="col-md-4">
+                                    <img src="images/6.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <p class="card-text b1-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p class="card-text b-text"><small >Steve Smith, Director Of Venus</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                
+                        <div class="card  col-md-3" style="max-width: 540px;">
+                            <div class="row align-items-center g-0">
+                                <div class="col-md-4">
+                                    <img src="images/40.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text b1-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <p class="card-text b-text"><small >Steve Smith, Director Of Venus</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="card  col-md-3" style="max-width: 540px;">
+                            <div class="row align-items-center g-0">
+                                <div class="col-md-4">
+                                    <img src="images/45.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <p class="card-text   b1-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                    <p class="card-text b-text"><small >Steve Smith, Director Of Venus</small></p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+                <!-- feedback -->
+                  <div id="Contact" class="feed d-flex justify-content-center align-items-center mt-5">
+                    <label class="pFeed mt-4" for="">Share Your Feedback with Us :</label>
+                    <div class="inputbox" class="">
+                        <input required="required" type="text">
+                        <span>FeedBack</span>
+                        <i></i>
+                    </div>
+                    <button class="send">
+                 
+                        <span>Send</span>
+
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                              </svg>
+                            </div>
+                          </div>
+                      </button>
+                
+                    
+                  </div>
+                
+            </div>
+
+                        
+            <!-- footer -->
+            
+                <div class="row Contact_Us g-0">
+                    <div class="col-md-2">
+                        <img src="images/Layer 1 1.png" class="lastImg" alt="" width="300px">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="ContactTitle">Contact Us
+                        </h3>
+                       
+                        <div class="input-group">
+                            <input required="" type="text" name="text" autocomplete="off" class="input">
+                            <label class="user-label">Full Name</label>
+                          </div>
+
+                          <div class="input-group">
+                            <input required="" type="text" name="email" autocomplete="off" class="input">
+                            <label class="user-label"> Email</label>
+                          </div>
+
+                          <div class="input-group">
+                            <input required="" type="text" name="text" autocomplete="off" class="input">
+                            <label class="user-label">Message</label>
+                          </div>
+
+                          <button class="contactButton">
+                            Contact
+                     
+                          </button>
+                          
 
 
-<hr>
-    <div class="row 🧓">
-        <div class="col-md-3 col-sm-6">
-            <p class="👵">Info@freshy.comt <br> Contact@freshy.com</p>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <p class="👵">St. Downtown, <br>
-                Ottawa, Canada <br>001 313 543 689 356</p>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <p class="👵">Instagram <br>
-                Facebook <br>
-                Twitter </p>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <p class="👵">Website by Matay Creative <br>
-                ©2022. All Rights Reserved</p>
-        </div>
-    </div>
+                    </div>
+                    <div class="col-md-2 EmailAndCity">
+                        <h5 class="hContact">
+                            Contact
+                        </h5>
+                        <a href="mailto:Freshy@gmail.com" class="email">Freshy@gmail.com</a>
+                        <h5 class="Based_in">
+                      
+                            Based in 
+                        </h5>
+                        <p>
+                            <a href="https://www.google.com/maps/place/Agadir" class="Agadir" target="_blank">>Morocoo, Agadir</a>
+                        </p> 
 
-    
+
+                        <div class="media">
+                            <img src="images/facebook.png" alt="" width="28px">
+                            <img src="images/instagram(1).png" alt="" width="25px">
+                            <img src="images/twitter.png" alt="" width="30px">
+                        </div>
+                    </div>
+
+                </div>
+            
+     
+            
+
+   
 
 </div>
-
-</footer>
-
-
-
-
-
             <div class="images-float">
                 <img class="tb" width="220px" src="image 11.png" alt="">
 
@@ -327,7 +401,6 @@
                 <img src="images/image-removebg-preview (9) 1.png" class="Vegan" width="240px" alt="">
                 <img src="images/png-transparent-pizza-margherita-italian-cuisine-chicago-style-pizza-pepperoni-pizza-removebg-preview 1.png" class="pizza" width="230px" alt="">
 
-
             </div>
 
             <div class="elip-rect">
@@ -342,17 +415,6 @@
             </div>
            
         </div>
-      </div>
-    
-
-
-
-
-
-
-
-
-
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
