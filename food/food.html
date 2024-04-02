@@ -127,16 +127,17 @@
             </div>
 
           <!-- cheers -->
-          <div class="row cheers d-flex justify-content-center">
-
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <img src="images/cheers.png" alt="" width="480px" height="300px">
+          <div class="row cheers d-flex justify-content-center  ">
+            <!-- <div class="col-lg-1"></div> -->
+            <div class="col-lg-2 col-sm-12">
+                <img src="images/cheers.png" alt="" width="460px" height="280px">
             </div>
+            
 
-            <div class="col-lg-4 offset-lg-2 col-md-12 col-sm-12">
-                <div class="cheerFlex">
+            <div class="col-lg-4 offset-lg-4 col-sm-12">
+                <div class="cheerFlex text-start">
                     <h3>Reserve Your Seat</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                    <p>Reserve your table today and enjoy delicious food, warm ambiance, attentive service</p>
                     <button class="cta">
                         <span><a href="book.html">Book a table</a></span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -146,31 +147,35 @@
                       </button>
                 </div>
             </div>
+        
+           
 
         </div>
         
         <!-- log in -->
         <div class="row logSection justify-content-center align-items-center">
 
-            <p class="col-12 text-center" id="Log_in">Log in</p>
+            
+            <div class="col-12"><p class="text-center" id="Log_in">Log in</p></div>
 
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <img src="images/ALOT.png" alt="" width="200px" class="imgLog">
             </div>
 
-            <div class="col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <p>To book a table, guests must first complete our sign-up process.</p>
                 <div class="form-floating mb-3">
-                    <div class="inputbox">
+                    <div class="box">
                         <input required="required" type="text">
                         <span>Username</span>
                         <i></i>
                     </div>
-                </div>
-                <div class="inputbox">
-                    <input required="required" type="text">
-                    <span>Password</span>
-                    <i></i>
+  
+                    <div class="box">
+                        <input required="required" type="text">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
                 </div>
                 <div>
                     <input type="submit" name="submit" value="login now" class="Btn form-btn mb-4 mt-4">
@@ -178,7 +183,7 @@
                 <p>don't have an account? <a href="register.html">register now</a></p>
             </div> 
 
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <img src="images/Photo.png" alt="" width="200px" class="imgLog">
             </div>
         </div>
@@ -189,16 +194,19 @@
                 <p id="About">About</p>
                 <h3 >Why Freshy?</h3> <br><br>
                 <h5>Chef-Crafted For Pure Joy</h5> 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
+                <p>Experience culinary bliss with our chef-led team crafting each dish to perfection, using the freshest ingredients sourced globally for a delightful fusion of flavors.</p> <br>
+
                 <h5>Ingredient You Can Trust</h5> 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
+                <p>Trust in our commitment to quality and sustainability as we prioritize sourcing organic produce and ethically raised meats and seafood from trusted suppliers.</p><br>
+
                 <h5>Special Dishes As You Like</h5> 
-                <p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the <br>  industry's standard</p> <br>
+                <p>Indulge in personalized dining experiences tailored to your preferences, from customizing favorite dishes to creating entirely new culinary delights just for you.<br> <br>
+
                 <a href="learn_more.html" class="leranb"><span>Learn More</span> </a>
             </div>
             <div class="col-md-5 col-sm-12">
-                <img src="images/Rectangle 21.png" alt="" width="210px" height="240px" class="AboutImg1">
-                <img src="images/Rectangle 22.png" alt="" width="210px" height="250px" class="AboutImg2">
+                <img src="images/Rectangle 21.png" alt="" width="210px" height="240px" class="AboutImg1 mb-1">
+                <img src="images/Rectangle 22.png" alt="" width="210px" height="240px" class="AboutImg2 ">
                 <img src="images/Rectangle 23.png" alt="" width="210px" height="250px" class="AboutImg3">
             </div>
         </div>
@@ -256,26 +264,16 @@
                         
                 </div>
         <!-- feedback input and button -->
-            <div id="Contact" class="feed d-flex justify-content-center align-items-center mt-5">
+            <div id="Contact" class="feed d-flex justify-content-center align-items-center ">
 
-                <label class="pFeed mt-4" for="">Share Your Feedback with Us :</label>
+                <label class="pFeed" for="">Share Your Feedback with Us :</label>
 
-                <div class="inputbox" class="">
+                <div class="box" >
                     <input required="required" type="text">
                     <span>FeedBack</span>
                     <i></i>
                 </div>
-
-                <button class="send">
-                    <span>Send</span>
-                    <div class="svg-wrapper-1">
-                        <div class="svg-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="none" d="M0 0h24v24H0z"></path>
-                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                              </svg>
-                        </div>
-                    </div>
+                <button class="send">Send
                 </button>
                 
             </div>
@@ -324,8 +322,8 @@
 
                     <div class="media">
                         <img src="images/facebook.png" alt="" width="28px">
-                        <img src="images/instagram(1).png" alt="" width="25px">
-                        <img src="images/twitter.png" alt="" width="30px">
+                        <img src="images/instagram(1).png" alt="" width="26px">
+                        <img src="images/twitter.png" alt="" width="32px">
                     </div>
                 </div>
 
@@ -334,22 +332,23 @@
      
 </div>
             <div class="images-float">
-                <img class="tb" width="220px" src="image 11.png" alt="">
+                <!-- <img class="tb" width="220px" src="image 11.png" alt=""> -->
 
-                <img src="images/images-removebg-preview (4) 1.png" class="tm1" width="100px" alt="">
+                <!-- <img src="images/images-removebg-preview (4) 1.png" class="tm1" width="100px" alt="">
                 <img src="images/images-removebg-preview (4) 1.png" class="tm2"  width="130px" alt="">
                 <img src="images/images-removebg-preview (4) 1.png" class="tm3" width="130px" alt="">
                 <img src="images/images-removebg-preview (4) 1.png" class="tm4" width="130px" alt="">    
                 <img src="images/images-removebg-preview (4) 1.png" class="tm5" width="130px" alt="">
                 <img src="images/tm6.png" class="tm6" width="130px" alt="">
-                <img src="images/tm6.png" class="tm7" width="160px" alt="">
+                <img src="images/tm6.png" class="tm7" width="160px" alt=""> -->
 
-                <img src="images/image 13.png" class="chill" width="130px" alt="">
+                <!-- <img src="images/image 13.png" class="chill" width="130px" alt=""> -->
 
                 <img src="images/image 12.png" class="tomato1" width="60px" alt="">
                 <img src="images/tomato2.png" class="tomato2" width="50px" alt="">
-                <img src="images/tomato3.png" class="tomato3" width="160px" alt="">
+                <!-- <img src="images/tomato3.png" class="tomato3" width="160px" alt=""> -->
                 <img src="images/tomato4.png" class="tomato4" width="80px" alt="">
+                <img src="images/tomato2.png" class="tomato5" width="50px" alt="">
 
 
                 <img src="images/images-removebg-preview (5) 1.png" class="ff1" width="50px" alt="">
@@ -358,16 +357,17 @@
 
                 <img src="images/156-1560071_transparent-lemon-slice-png-png-download-removebg-preview 2.png" class="lm1" width="60px" alt="">
                 <img src="images/156-1560071_transparent-lemon-slice-png-png-download-removebg-preview 1.png" class="lm2" width="60px" alt="">
-                <img src="images/l" alt="">
+                <img src="images/156-1560071_transparent-lemon-slice-png-png-download-removebg-preview 2.png" class="lm3" width="60px" alt="">
+                <!-- <img src="images/l" alt="">
                 <img class="lm3" src="images/lemon.png" alt=""  width="140px" >
                 <img src="images/l" alt="">
-                <img class="lm4" src="images/lemon.png" alt=""  width="100px" >
+                <img class="lm4" src="images/lemon.png" alt=""  width="100px" > -->
                 
-                <img src="images/image-removebg-preview (6) 1.png" class="Burger" width="280px" alt="">
-                <img src="images/image-removebg-preview (7) 1.png" class="salad" width="305px" alt="">
-                <img src="images/image-removebg-preview (8) 1.png" class="Chiken" width="260px" alt="">
-                <img src="images/image-removebg-preview (9) 1.png" class="Vegan" width="240px" alt="">
-                <img src="images/png-transparent-pizza-margherita-italian-cuisine-chicago-style-pizza-pepperoni-pizza-removebg-preview 1.png" class="pizza" width="230px" alt="">
+                <!-- <img src="images/image-removebg-preview (6) 1.png" class="Burger" width="150px" alt="">
+                <img src="images/image-removebg-preview (7) 1.png" class="salad" width="170px" alt="">
+                <img src="images/image-removebg-preview (8) 1.png" class="Chiken" width="140px" alt="">
+                <img src="images/image-removebg-preview (9) 1.png" class="Vegan" width="130px" alt="">
+     -->
 
             </div>
 

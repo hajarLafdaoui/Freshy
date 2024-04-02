@@ -83,7 +83,6 @@ nav ul li a:hover {
 
 /* log in button */
 .Btn {
-    position: relative;
     width: 130px;
     height: 45px;
     border-radius: 45px;
@@ -101,39 +100,17 @@ nav ul li a:hover {
     margin-right: 18px;
 }
 
-.Btn::before {
-    width: 70%;
-    height: 2px;
-    position: absolute;
-    background-color: rgba(250, 250, 250, 0.678);
-    content: "";
-    filter: blur(1px);
-    top: 7px;
-    border-radius: 50%;
-}
-
-.Btn::after {
-    width: 70%;
-    height: 2px;
-    position: absolute;
-    background-color: rgba(250, 250, 250, 0.137);
-    content: "";
-    filter: blur(1px);
-    bottom: 7px;
-    border-radius: 50%;
-}
-
 .Btn:hover {
-    animation: jello-horizontal 0.9s both;
+    animation: AnimatedButton 0.9s both;
 }
 
-@keyframes jello-horizontal {
+@keyframes AnimatedButton {
     0% {
         transform: scale3d(1, 1, 1);
     }
 
     30% {
-        transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.50, 0.75, 1);
     }
 
     40% {
@@ -211,6 +188,7 @@ nav ul li a:hover {
     }
 
     /* first */
+
     .first h1 {
         font-size: 26px !important;
         font-weight: 550 !important;
@@ -242,12 +220,12 @@ nav ul li a:hover {
 
     /* cards */
     .card {
-        margin: 0px 20px;
-    }
+        /* margin-right: 50px; */
+        padding: 0px !important;
+        margin-top: 0px !important;
+        margin-left: 0px !important;
 
-    .cards {
-        margin-bottom: 0 !important;
-        padding: 0 !important;
+        width: 400px !important;
     }
 
     /* cheers */
@@ -264,6 +242,15 @@ nav ul li a:hover {
     }
 
     /* log */
+    .logSection {
+        background-color: transparent !important;
+        width: 60% !important;
+    }
+
+    .logSection .form-floating .inputbox {
+        padding: 10px 30px !important;
+    }
+
     .imgLog {
         display: none;
     }
@@ -431,6 +418,15 @@ nav ul li a:hover {
     }
 
     /* log */
+    .logSection {
+        background-color: transparent !important;
+        width: 60% !important;
+    }
+
+    .logSection .form-floating .inputbox {
+        padding: 10px 30px !important;
+    }
+
     .imgLog {
         display: none;
     }
@@ -488,6 +484,20 @@ nav ul li a:hover {
 }
 
 /* first */
+
+.plat2 {
+    animation: bbb 3s infinite;
+}
+
+@keyframes bbb {
+
+    30%,
+    70% {
+        transform: rotate(360deg);
+    }
+}
+
+
 .first {
     margin-bottom: 0px;
 }
@@ -505,6 +515,7 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+/* BookButton */
 .cta {
     position: relative;
     padding: 16px 29px;
@@ -529,21 +540,17 @@ nav ul li a:hover {
 
 .cta span a {
     position: relative;
-    font-family: "Ubuntu", sans-serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #000 !important;
-    text-decoration: none;
 }
 
 .cta svg {
-    position: relative;
-    top: 0;
     margin-left: 10px;
     fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    /* stroke-linecap: round; */
+    /* stroke-linejoin: round; */
     stroke: #000;
     stroke-width: 2;
     transform: translateX(-5px);
@@ -559,13 +566,9 @@ nav ul li a:hover {
     transform: translateX(0);
 }
 
-.cta:active {
-    transform: scale(0.95);
-}
-
 /* second */
 .second h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     color: #000;
     margin-bottom: 20px;
@@ -580,7 +583,13 @@ nav ul li a:hover {
     background-color: #392E2D !important;
     color: #fff !important;
     padding: 10px 30px !important;
-    margin-top: 20px !important;
+    margin-top: 30px !important;
+    margin-left: 60px !important;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.15);
 }
 
 .card-price {
@@ -594,35 +603,31 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* 
 .Burger {
     position: absolute;
-    top: 870px;
-    left: 45px;
+    top: 905px;
+    left: 100px;
 }
 
 .salad {
     position: absolute;
-    top: 860px;
-    left: 450px;
+    top: 900px;
+    left: 665px;
 }
 
 .Chiken {
     position: absolute;
-    top: 869px;
-    left: 780px;
+    top: 1080px;
+    left: 105px;
 }
 
 .Vegan {
     position: absolute;
-    top: 1175px;
-    left: 240px;
+    top: 1090px;
+    left: 650px;
 }
-
-.pizza {
-    position: absolute;
-    top: 1175px;
-    left: 600px;
-}
+ */
 
 /* cheers */
 .cheers {
@@ -651,6 +656,8 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     padding: 0 !important;
+    margin-top: 50px !important;
+    margin-bottom: 100px !important;
 }
 
 .logSection p {
@@ -686,20 +693,15 @@ nav ul li a:hover {
     display: inline-block;
     border-radius: 40px;
     background-color: #D21200;
-    border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 17px;
     padding: 14px;
     width: 180px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
 }
 
 .leranb span {
-    cursor: pointer;
-    display: inline-block;
     position: relative;
     transition: 0.5s;
 }
@@ -708,7 +710,7 @@ nav ul li a:hover {
     content: '»';
     position: absolute;
     opacity: 0;
-    top: 0;
+    top: -1px;
     right: -15px;
     transition: 0.5s;
 }
@@ -762,65 +764,12 @@ nav ul li a:hover {
     border-top: #666 solid;
 }
 
-/*input feedBack  */
-.inputbox {
-    position: relative;
-}
-
 .feed {
     margin-top: 100px !important;
 }
 
-.inputbox input {
-    position: relative;
-    width: 100%;
-    padding: 20px 10px 10px;
-    background: transparent;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    color: #fff;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    z-index: 10;
-}
+/*input feedBack  */
 
-.inputbox span {
-    position: absolute;
-    left: 0;
-    padding: 20px 10px 10px;
-    font-size: 1em;
-    color: #8f8f8f;
-    letter-spacing: 00.05em;
-    transition: 0.5s;
-    pointer-events: none;
-}
-
-.inputbox input:valid~span,
-.inputbox input:focus~span {
-    color: #D21200;
-    transform: translateX(-10px) translateY(-34px);
-    font-size: 0, 75em;
-}
-
-.inputbox i {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #D21200;
-    border-radius: 4px;
-    transition: 0.5s;
-    pointer-events: none;
-    z-index: 9;
-}
-
-.inputbox input:valid~i,
-.inputbox input:focus~i {
-    height: 44px;
-}
 
 .pFeed {
     margin-top: 10px;
@@ -830,71 +779,31 @@ nav ul li a:hover {
 
 /* send button feeedback */
 .send {
-    font-family: inherit;
-    font-size: 18px;
-    background: linear-gradient(to bottom, #D21200 0%, #ee5142 100%);
-    color: white;
-    padding: 0.4em 1.4em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;
-    margin-top: 13px;
-    margin-left: 10px;
+    position: relative;
+    margin-left: 22px;
+    margin-bottom: 10px;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #D21200;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #D21200;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 #D21200;
 }
 
 .send:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    box-shadow: inset 0 -100px 0 0#D21200;
 }
 
-.send:active {
-    transform: scale(0.95);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.send span {
-    display: block;
-    margin-left: 0.4em;
-    transition: all 0.3s;
-    margin-right: 13px;
-}
-
-.send svg {
-    width: 18px;
-    height: 18px;
-    fill: white;
-    transition: all 0.3s;
-}
-
-.send .svg-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-right: 0.5em;
-    transition: all 0.3s;
-}
-
-.send:hover .svg-wrapper {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.send:hover svg {
-    transform: rotate(45deg);
-}
 
 /* Contact_Us */
 .Contact_Us {
     padding: 0px 12px;
     background-color: #edd49a;
-    border: #000 solid;
     border-radius: 15px;
     margin: 10px 50px !important;
 }
@@ -904,34 +813,6 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-.contactButton {
-    appearance: none;
-    background-color: transparent;
-    border: 0.125em solid #D21200;
-    box-sizing: border-box;
-    color: #D21200;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
-    min-height: 3.75em;
-    min-width: 0;
-    outline: none;
-    padding: .3em 6em;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    will-change: transform;
-    border-radius: 65px;
-    margin: auto !important;
-    margin-bottom: 20px !important;
-}
-
 .formFlex {
     display: flex;
     flex-direction: column;
@@ -939,20 +820,23 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.contactButton:disabled {
-    pointer-events: none;
+.contactButton {
+    position: relative;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #D21200;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #D21200;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 #D21200;
 }
 
 .contactButton:hover {
-    color: #fff;
-    background-color: #D21200;
-    box-shadow: rgba(238, 190, 190, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-}
-
-.contactButton:active {
-    box-shadow: none;
-    transform: translateY(0);
+    color: white;
+    box-shadow: inset 0 -100px 0 0#D21200;
 }
 
 a.email,
@@ -986,9 +870,7 @@ a.Agadir {
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
-    font-size: 1em;
     color: #8f8f8f;
-    letter-spacing: 00.05em;
     transition: 0.5s;
     pointer-events: none;
     text-align: center !important;
@@ -998,7 +880,7 @@ a.Agadir {
 .box input:focus~span {
     color: #D21200;
     transform: translateX(-10px) translateY(-34px);
-    font-size: 0, 75em;
+
 }
 
 .box i {
@@ -1041,14 +923,21 @@ a.Agadir {
 
 .media img {
     margin-right: 30px;
+    transition: all .7s;
 }
 
+.media img:hover {
+    transform: translateY(-22px);
+}
+
+
+
 /* floats */
-.tb {
+/* .tb {
     position: absolute;
     bottom: 70px;
     right: 395px;
-}
+} */
 
 .elip7 {
     position: absolute;
@@ -1086,6 +975,7 @@ a.Agadir {
     left: 0;
 }
 
+/* 
 .tm1 {
     position: absolute;
     bottom: 422px;
@@ -1133,7 +1023,7 @@ a.Agadir {
     position: absolute;
     bottom: 220px;
     left: 110px;
-}
+} */
 
 .tomato1 {
     position: absolute;
@@ -1147,11 +1037,17 @@ a.Agadir {
     right: 0px;
 }
 
-.tomato3 {
+.tomato5 {
+    position: absolute;
+    top: 2800px;
+    right: 0px;
+}
+
+/* .tomato3 {
     position: absolute;
     top: 2850px;
     left: 300px;
-}
+} */
 
 .tomato4 {
     position: absolute;
@@ -1191,6 +1087,12 @@ a.Agadir {
 
 .lm3 {
     position: absolute;
+    top: 3200px;
+    right: 0px;
+}
+
+/* .lm3 {
+    position: absolute;
     top: 1530px;
     left: 1020px;
 }
@@ -1199,4 +1101,4 @@ a.Agadir {
     position: absolute;
     top: 2760px;
     left: 770px;
-}
+} */
